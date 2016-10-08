@@ -1,0 +1,364 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<metahttp-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE"> 
+<link rel="stylesheet" type="text/css" href="style/style.css" tppabs="http://www.web-591.com/style/style.css" />
+<script type="text/javascript" src="js/jquery-1.8.2.min.js" tppabs="http://www.web-591.com/js/jquery-1.8.2.min.js"></script> 
+
+<script type="text/javascript">
+    $(function () {
+        var system = {};
+        var p = navigator.platform;
+        system.win = p.indexOf("Win") == 0;
+        system.mac = p.indexOf("Mac") == 0;
+        system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);
+        if (system.win || system.mac || system.xll) {//如果是电脑跳转到百度  
+            //window.location.href="index.aspx.htm"/*tpa=http://www.web-591.com/index.aspx*/;  
+
+        } else {
+            window.location.href = "Wap_Index.aspx.htm"/*tpa=http://www.web-591.com/Wap_Index.aspx*/;
+
+        }
+    })
+</script>
+
+
+<!--[if IE 6]>
+<script type="text/javascript" src="js/DD_belatedPNG.js" tppabs="http://www.web-591.com/js/DD_belatedPNG.js" ></script>
+<script type="text/javascript">DD_belatedPNG.fix('http://www.web-591.com/img,.slide_nav,.banne2 h2,p,.choose img,.AboutB li,div,.bag');</script>
+<![endif]-->   
+<script type="text/javascript" src="js/lrtk.js" tppabs="http://www.web-591.com/js/lrtk.js"></script> 
+<title>
+	网站设计、网站制作、网站建设、高端网站设计-旗宇同创科技
+</title>
+<script type="text/javascript">
+        jQuery(document).ready(function () {
+            var topmenu = jQuery(".headNav");
+            var topmenu_top = topmenu.offset().top;
+            reset_topmenu_top(topmenu, topmenu_top);
+            jQuery(window).scroll(function () {
+                reset_topmenu_top(topmenu, topmenu_top);
+            });
+        });
+        function reset_topmenu_top(topmenu, topmenu_top) {
+            var document_scroll_top = jQuery(document).scrollTop();
+            if (document_scroll_top > topmenu_top) {
+                topmenu.css({ 'position': 'fixed', 'top': '0px' });
+                topmenu.addClass("fid");
+            }
+            if (document_scroll_top <= topmenu_top) {
+                topmenu.attr('style', { 'top': topmenu_top + 'px' });
+                topmenu.removeClass("fid");
+            }
+        }
+</script> 
+
+
+
+
+
+<meta name="keywords" content="沈阳网站设计，沈阳网站制作，沈阳网站建设，沈阳做网站，沈阳建网站公司,沈阳网络公司，沈阳高端网站制作，沈阳高端网站设计，沈阳高端网站建设，沈阳制作网站公司，沈阳网页制作，沈阳网页设计" /><meta name="description" content="旗宇同创科技(免费电话:4006-624-024)为您提供沈阳网站设计，沈阳网站制作，沈阳网站建设，沈阳做网站，沈阳建网站公司,沈阳网页设计，沈阳网页制作。沈阳中高端定制网站服务商，旗宇品质值得信赖。" /></head>
+
+
+
+
+<body>
+    <form method="post" action="javascript:if(confirm('http://www.web-591.com/Website.aspx?__VIEWSTATE=/wEPDwULLTEwMDUyNjYzMjgPZBYCZg9kFgICAw9kFgZmDw8WAh4ISW1hZ2VVcmwFNFVwbG9hZEZpbGVzLzE1NmQzYWVhLTJhMWQtNDUzYy1iYjg1LTI4MWYyZWZlYmVjNi5qcGdkZAICDxYCHgRUZXh0BekDPHA+DQoJQ29weXJpZ2h0IEAg5rKI6Ziz5peX5a6H5ZCM5Yib56eR5oqA5pyJ6ZmQ5YWs5Y+4IEFsbCBSaWdodHMgUmVzZXJ2ZWQuIOi+vUlDUOWkhzEwMjAwNjIy5Y+3DQo8L3A+DQo8cD4NCgk8YnIgLz4NCjwvcD4NCjxwPg0KCTxzcGFuIHN0eWxlPSJjb2xvcjojQ0NDQ0NDOyI+PGEgaHJlZj0iaHR0cDovL3d3dy5xaXl1a2VqaS5jb20iIHRhcmdldD0iX2JsYW5rIj7msojpmLPnvZHnq5norr7orqE8L2E+Jm5ic3A7ICZuYnNwOzwvc3Bhbj48c3BhbiBzdHlsZT0iY29sb3I6I0NDQ0NDQzsiPjxhIGhyZWY9Imh0dHA6Ly93d3cud2ViLTUxOC5jb20iIHRhcmdldD0iX2JsYW5rIj7msojpmLPnvZHnq5nliLbkvZw8L2E+Jm5ic3A7ICZuYnNwOzxzcGFuIHN0eWxlPSJjb2xvcjojQ0NDQ0NDOyI+PGEgaHJlZj0iaHR0cDovL3d3dy56ZWstYWQuY24iIHRhcmdldD0iX2JsYW5rIj7msojpmLPpq5jnq6/nvZHnq5norr7orqE8L2E+PC9zcGFuPiA8L3NwYW4+DQo8L3A+ZAIDDxYCHwEFzQQ8c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCI+IHZhciBfYmRobVByb3RvY29sID0gKCgiaHR0cHM6IiA9PSBkb2N1bWVudC5sb2NhdGlvbi5wcm90b2NvbCkgPyAiIGh0dHBzOi8vIiA6ICIgaHR0cDovLyIpOyBkb2N1bWVudC53cml0ZSh1bmVzY2FwZSgiJTNDc2NyaXB0IHNyYz0nIiArIF9iZGhtUHJvdG9jb2wgKyAiaG0uYmFpZHUuY29tL2guanMlM0Y0OTU4YzUxMjY5OTkzYWY5ZmMyZDA5MDQ0YzhmMTI0ZScgdHlwZT0ndGV4dC9qYXZhc2NyaXB0JyUzRSUzQy9zY3JpcHQlM0UiKSk7IDwvc2NyaXB0Pg0KPC0tIeeZvuW6pue7n+iuoSAtLT4NCjxzY3JpcHQ+DQp2YXIgX2htdCA9IF9obXQgfHwgW107DQooZnVuY3Rpb24oKSB7DQogIHZhciBobSA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoInNjcmlwdCIpOw0KICBobS5zcmMgPSAiLy9obS5iYWlkdS5jb20vaG0uanM/YzVjYjA2ZDE2ODBlODk2MzQ1Y2E5YjYwNTFiY2IyNWMiOw0KICB2YXIgcyA9IGRvY3VtZW50LmdldEVsZW1lbnRzQnlUYWdOYW1lKCJzY3JpcHQiKVswXTsgDQogIHMucGFyZW50Tm9kZS5pbnNlcnRCZWZvcmUoaG0sIHMpOw0KfSkoKTsNCjwvc2NyaXB0Pg0KZGTGvYr23K6/lzCOkH6kbjPUdkka0Dt2H6NezZIPss7yZg==  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ������, �����������, ����Ŀ����ֹͣ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.web-591.com/Website.aspx?__VIEWSTATE=/wEPDwULLTEwMDUyNjYzMjgPZBYCZg9kFgICAw9kFgZmDw8WAh4ISW1hZ2VVcmwFNFVwbG9hZEZpbGVzLzE1NmQzYWVhLTJhMWQtNDUzYy1iYjg1LTI4MWYyZWZlYmVjNi5qcGdkZAICDxYCHgRUZXh0BekDPHA+DQoJQ29weXJpZ2h0IEAg5rKI6Ziz5peX5a6H5ZCM5Yib56eR5oqA5pyJ6ZmQ5YWs5Y+4IEFsbCBSaWdodHMgUmVzZXJ2ZWQuIOi+vUlDUOWkhzEwMjAwNjIy5Y+3DQo8L3A+DQo8cD4NCgk8YnIgLz4NCjwvcD4NCjxwPg0KCTxzcGFuIHN0eWxlPSJjb2xvcjojQ0NDQ0NDOyI+PGEgaHJlZj0iaHR0cDovL3d3dy5xaXl1a2VqaS5jb20iIHRhcmdldD0iX2JsYW5rIj7msojpmLPnvZHnq5norr7orqE8L2E+Jm5ic3A7ICZuYnNwOzwvc3Bhbj48c3BhbiBzdHlsZT0iY29sb3I6I0NDQ0NDQzsiPjxhIGhyZWY9Imh0dHA6Ly93d3cud2ViLTUxOC5jb20iIHRhcmdldD0iX2JsYW5rIj7msojpmLPnvZHnq5nliLbkvZw8L2E+Jm5ic3A7ICZuYnNwOzxzcGFuIHN0eWxlPSJjb2xvcjojQ0NDQ0NDOyI+PGEgaHJlZj0iaHR0cDovL3d3dy56ZWstYWQuY24iIHRhcmdldD0iX2JsYW5rIj7msojpmLPpq5jnq6/nvZHnq5norr7orqE8L2E+PC9zcGFuPiA8L3NwYW4+DQo8L3A+ZAIDDxYCHwEFzQQ8c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCI+IHZhciBfYmRobVByb3RvY29sID0gKCgiaHR0cHM6IiA9PSBkb2N1bWVudC5sb2NhdGlvbi5wcm90b2NvbCkgPyAiIGh0dHBzOi8vIiA6ICIgaHR0cDovLyIpOyBkb2N1bWVudC53cml0ZSh1bmVzY2FwZSgiJTNDc2NyaXB0IHNyYz0nIiArIF9iZGhtUHJvdG9jb2wgKyAiaG0uYmFpZHUuY29tL2guanMlM0Y0OTU4YzUxMjY5OTkzYWY5ZmMyZDA5MDQ0YzhmMTI0ZScgdHlwZT0ndGV4dC9qYXZhc2NyaXB0JyUzRSUzQy9zY3JpcHQlM0UiKSk7IDwvc2NyaXB0Pg0KPC0tIeeZvuW6pue7n+iuoSAtLT4NCjxzY3JpcHQ+DQp2YXIgX2htdCA9IF9obXQgfHwgW107DQooZnVuY3Rpb24oKSB7DQogIHZhciBobSA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoInNjcmlwdCIpOw0KICBobS5zcmMgPSAiLy9obS5iYWlkdS5jb20vaG0uanM/YzVjYjA2ZDE2ODBlODk2MzQ1Y2E5YjYwNTFiY2IyNWMiOw0KICB2YXIgcyA9IGRvY3VtZW50LmdldEVsZW1lbnRzQnlUYWdOYW1lKCJzY3JpcHQiKVswXTsgDQogIHMucGFyZW50Tm9kZS5pbnNlcnRCZWZvcmUoaG0sIHMpOw0KfSkoKTsNCjwvc2NyaXB0Pg0KZGTGvYr23K6/lzCOkH6kbjPUdkka0Dt2H6NezZIPss7yZg=='" tppabs="http://www.web-591.com/Website.aspx?__VIEWSTATE=/wEPDwULLTEwMDUyNjYzMjgPZBYCZg9kFgICAw9kFgZmDw8WAh4ISW1hZ2VVcmwFNFVwbG9hZEZpbGVzLzE1NmQzYWVhLTJhMWQtNDUzYy1iYjg1LTI4MWYyZWZlYmVjNi5qcGdkZAICDxYCHgRUZXh0BekDPHA+DQoJQ29weXJpZ2h0IEAg5rKI6Ziz5peX5a6H5ZCM5Yib56eR5oqA5pyJ6ZmQ5YWs5Y+4IEFsbCBSaWdodHMgUmVzZXJ2ZWQuIOi+vUlDUOWkhzEwMjAwNjIy5Y+3DQo8L3A+DQo8cD4NCgk8YnIgLz4NCjwvcD4NCjxwPg0KCTxzcGFuIHN0eWxlPSJjb2xvcjojQ0NDQ0NDOyI+PGEgaHJlZj0iaHR0cDovL3d3dy5xaXl1a2VqaS5jb20iIHRhcmdldD0iX2JsYW5rIj7msojpmLPnvZHnq5norr7orqE8L2E+Jm5ic3A7ICZuYnNwOzwvc3Bhbj48c3BhbiBzdHlsZT0iY29sb3I6I0NDQ0NDQzsiPjxhIGhyZWY9Imh0dHA6Ly93d3cud2ViLTUxOC5jb20iIHRhcmdldD0iX2JsYW5rIj7msojpmLPnvZHnq5nliLbkvZw8L2E+Jm5ic3A7ICZuYnNwOzxzcGFuIHN0eWxlPSJjb2xvcjojQ0NDQ0NDOyI+PGEgaHJlZj0iaHR0cDovL3d3dy56ZWstYWQuY24iIHRhcmdldD0iX2JsYW5rIj7msojpmLPpq5jnq6/nvZHnq5norr7orqE8L2E+PC9zcGFuPiA8L3NwYW4+DQo8L3A+ZAIDDxYCHwEFzQQ8c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCI+IHZhciBfYmRobVByb3RvY29sID0gKCgiaHR0cHM6IiA9PSBkb2N1bWVudC5sb2NhdGlvbi5wcm90b2NvbCkgPyAiIGh0dHBzOi8vIiA6ICIgaHR0cDovLyIpOyBkb2N1bWVudC53cml0ZSh1bmVzY2FwZSgiJTNDc2NyaXB0IHNyYz0nIiArIF9iZGhtUHJvdG9jb2wgKyAiaG0uYmFpZHUuY29tL2guanMlM0Y0OTU4YzUxMjY5OTkzYWY5ZmMyZDA5MDQ0YzhmMTI0ZScgdHlwZT0ndGV4dC9qYXZhc2NyaXB0JyUzRSUzQy9zY3JpcHQlM0UiKSk7IDwvc2NyaXB0Pg0KPC0tIeeZvuW6pue7n+iuoSAtLT4NCjxzY3JpcHQ+DQp2YXIgX2htdCA9IF9obXQgfHwgW107DQooZnVuY3Rpb24oKSB7DQogIHZhciBobSA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoInNjcmlwdCIpOw0KICBobS5zcmMgPSAiLy9obS5iYWlkdS5jb20vaG0uanM/YzVjYjA2ZDE2ODBlODk2MzQ1Y2E5YjYwNTFiY2IyNWMiOw0KICB2YXIgcyA9IGRvY3VtZW50LmdldEVsZW1lbnRzQnlUYWdOYW1lKCJzY3JpcHQiKVswXTsgDQogIHMucGFyZW50Tm9kZS5pbnNlcnRCZWZvcmUoaG0sIHMpOw0KfSkoKTsNCjwvc2NyaXB0Pg0KZGTGvYr23K6/lzCOkH6kbjPUdkka0Dt2H6NezZIPss7yZg==" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEwMDUyNjYzMjgPZBYCZg9kFgICAw9kFgZmDw8WAh4ISW1hZ2VVcmwFNFVwbG9hZEZpbGVzLzE1NmQzYWVhLTJhMWQtNDUzYy1iYjg1LTI4MWYyZWZlYmVjNi5qcGdkZAICDxYCHgRUZXh0BekDPHA+DQoJQ29weXJpZ2h0IEAg5rKI6Ziz5peX5a6H5ZCM5Yib56eR5oqA5pyJ6ZmQ5YWs5Y+4IEFsbCBSaWdodHMgUmVzZXJ2ZWQuIOi+vUlDUOWkhzEwMjAwNjIy5Y+3DQo8L3A+DQo8cD4NCgk8YnIgLz4NCjwvcD4NCjxwPg0KCTxzcGFuIHN0eWxlPSJjb2xvcjojQ0NDQ0NDOyI+PGEgaHJlZj0iaHR0cDovL3d3dy5xaXl1a2VqaS5jb20iIHRhcmdldD0iX2JsYW5rIj7msojpmLPnvZHnq5norr7orqE8L2E+Jm5ic3A7ICZuYnNwOzwvc3Bhbj48c3BhbiBzdHlsZT0iY29sb3I6I0NDQ0NDQzsiPjxhIGhyZWY9Imh0dHA6Ly93d3cud2ViLTUxOC5jb20iIHRhcmdldD0iX2JsYW5rIj7msojpmLPnvZHnq5nliLbkvZw8L2E+Jm5ic3A7ICZuYnNwOzxzcGFuIHN0eWxlPSJjb2xvcjojQ0NDQ0NDOyI+PGEgaHJlZj0iaHR0cDovL3d3dy56ZWstYWQuY24iIHRhcmdldD0iX2JsYW5rIj7msojpmLPpq5jnq6/nvZHnq5norr7orqE8L2E+PC9zcGFuPiA8L3NwYW4+DQo8L3A+ZAIDDxYCHwEFzQQ8c2NyaXB0IHR5cGU9InRleHQvamF2YXNjcmlwdCI+IHZhciBfYmRobVByb3RvY29sID0gKCgiaHR0cHM6IiA9PSBkb2N1bWVudC5sb2NhdGlvbi5wcm90b2NvbCkgPyAiIGh0dHBzOi8vIiA6ICIgaHR0cDovLyIpOyBkb2N1bWVudC53cml0ZSh1bmVzY2FwZSgiJTNDc2NyaXB0IHNyYz0nIiArIF9iZGhtUHJvdG9jb2wgKyAiaG0uYmFpZHUuY29tL2guanMlM0Y0OTU4YzUxMjY5OTkzYWY5ZmMyZDA5MDQ0YzhmMTI0ZScgdHlwZT0ndGV4dC9qYXZhc2NyaXB0JyUzRSUzQy9zY3JpcHQlM0UiKSk7IDwvc2NyaXB0Pg0KPC0tIeeZvuW6pue7n+iuoSAtLT4NCjxzY3JpcHQ+DQp2YXIgX2htdCA9IF9obXQgfHwgW107DQooZnVuY3Rpb24oKSB7DQogIHZhciBobSA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoInNjcmlwdCIpOw0KICBobS5zcmMgPSAiLy9obS5iYWlkdS5jb20vaG0uanM/YzVjYjA2ZDE2ODBlODk2MzQ1Y2E5YjYwNTFiY2IyNWMiOw0KICB2YXIgcyA9IGRvY3VtZW50LmdldEVsZW1lbnRzQnlUYWdOYW1lKCJzY3JpcHQiKVswXTsgDQogIHMucGFyZW50Tm9kZS5pbnNlcnRCZWZvcmUoaG0sIHMpOw0KfSkoKTsNCjwvc2NyaXB0Pg0KZGTGvYr23K6/lzCOkH6kbjPUdkka0Dt2H6NezZIPss7yZg==" />
+
+        <div class="headNav">
+            <div class="head">
+	            <div class="logo left"><a href="index.aspx.htm" tppabs="http://www.web-591.com/index.aspx"><img id="ctl00_Logo" src="UploadFiles/156d3aea-2a1d-453c-bb85-281f2efebec6.jpg" tppabs="http://www.web-591.com/UploadFiles/156d3aea-2a1d-453c-bb85-281f2efebec6.jpg" /></a></div>
+                <ul class="Menu right clearfix">
+    	            <li class=""><a href="Index-1.aspx.htm" tppabs="http://www.web-591.com/Index.aspx">首页</a></li>
+    	            <li class=""><a href="About.aspx.htm" tppabs="http://www.web-591.com/About.aspx">关于旗宇</a></li>
+    	            <li class="cur"><a href="Website.aspx.htm" tppabs="http://www.web-591.com/Website.aspx">网站设计</a></li>
+    	            <li class=""><a href="Case_List.aspx.htm" tppabs="http://www.web-591.com/Case_List.aspx">客户案例</a></li>
+    	           
+                    <li class=""><a href="News_List.aspx.htm" tppabs="http://www.web-591.com/News_List.aspx">最新签约</a></li>
+    	            <li class=""><a href="Contact.aspx.htm" tppabs="http://www.web-591.com/Contact.aspx">联系我们</a></li>
+                </ul>
+            </div> 
+        </div> 
+        
+    <script type="text/javascript">
+        $(function () {
+            $('.texts').animate({ opacity: 1, top: 0 }, 800);
+        })
+    </script>
+    <div class="pageBannerS1" style="background-image: url(images/Website.jpg)">
+        <div class="texts">
+            <h1>多终端浏览解决方案</h1>
+            <h2>PC时代与移动时代双结合，营销策略结合视觉创意达到完美的网站访问体验<br />
+                标新立异，不惧创新，通过主流程序开发与前端H5技术融合，使程序框架能够快速稳定的运行</h2>
+        </div>
+    </div>
+    <div class="PublicCon">
+        <div class="site">
+            <h1 class="siteTile">网站设计</h1>
+            <h2 class="siteStile">Website Design</h2>
+            <ul class="siteco clearfix">
+                <li class="img1">
+                    <div class="img">
+                        <img src="images/site1.jpg" tppabs="http://www.web-591.com/images/site1.jpg" /><i></i></div>
+                    <h1>高端定制网站</h1>
+                    <p class="text">界面设计是网站的灵魂，是抓住用户眼球的第一要素。基于互联网的品牌行销策略的策划与执行。品牌形象挖掘、梳理、包装、表现与传播。</p>
+                    <div class="fuson">
+                        国际英文域名<br />
+                        空间大小：1G国内多线主机
+                    </div>
+                    <p class="time">约15-25个工作日</p>
+                </li>
+                <li class="img2">
+                    <div class="img">
+                        <img src="images/site2.jpg" tppabs="http://www.web-591.com/images/site2.jpg" /><i></i></div>
+                    <h1>购物商城网站</h1>
+                    <p class="text">商城网站需要强大的后台管理系统、良好的用户购物体验、安全稳定的服务器空间。我们将辅助企业实现品牌战略目标的互联网解决方案。</p>
+                    <div class="fuson">
+                        国际英文域名<br />
+                        空间大小：3G国内多线主机
+                    </div>
+                    <p class="time">约25-35个工作日</p>
+                </li>
+                <li class="img3">
+                    <div class="img">
+                        <img src="images/site3.jpg" tppabs="http://www.web-591.com/images/site3.jpg" /><i></i></div>
+                    <h1>移动端开发</h1>
+                    <p class="text">随时随地手机访问，与PC官网相辅相成，关注时推送消息，与公众平台无缝接入。</p>
+                    <div class="fuson">
+                        国际英文域名<br />
+                        空间大小：1G手机专用空间
+                    </div>
+                    <p class="time">约7-15个工作日</p>
+                </li>
+                <li class=""></li>
+            </ul>
+            <div class="btsitec">
+                <div class="btsitecTl">
+                    <h1>网站市场指导与分析</h1>
+                    <div class="btsitecTlc">不同的网络服务提供商，做出来的网站在页面美化细节、程序代码优化、后台管理系统、售后的服务和网站运行的稳定性都有差别。我们执着于电子商务领域专业研究及实施，做给客户的网站，保证在页面视觉美化效果上面做到精美、大气；在程序代码上做到安全、稳定和后台的人性化管理操作；在服务上，善待每一个客户、朋友式的合作，为客户提供“咨询实施一体化”服务模式。我们坚信：作为一家专业的网站建设公司，只要做好自己，其余的随之纷至沓来！ </div>
+                </div>
+                <div class="btsitecTr">
+                    <h1>价铬</h1>
+                    <h1>及相关询价</h1>
+                    <h2 class="one">4006-624-024</h2>
+                    <h2 class="two">或线上咨询</h2>
+                </div>
+                <div class="btsiteccl">
+                    <h1>* 免费提供技术支持</h1>
+                    <h1>* 免费提供ICP备案</h1>
+                </div>
+                <div class="btsiteccr">
+                    <h1>可自定义网站关键词，以利于搜索引擎排名，</h1>
+                    <h1>传授或设置相关具有商业价值的长尾关健字，但不保证排名效果。</h1>
+                </div>
+
+                <div class="btsitecbl">
+                    <h1>服务内容</h1>
+                    <h2>一、网站全部是动态的，您可以随时添加或者修改文章、产品、联系方式等等信息。</h2>
+                    <h2>二、网站包含的内容名词可以自定义，比如公司简介可以叫关于我们等，但是整体方向不可以改变。</h2>
+                    <h2>三、网站程序维护永久免费指的是选择我们公司服务器，其他服务器一概不负责维护。 </h2>
+                    <h2>四、以上报价不包含发票，开发票另收费8%套餐价格。</h2>
+                    <h3><strong>郑重承诺</strong>： 不满意设计效果及服务质量，在签定合同10天内，无条件全额退款！</h3>
+                </div>
+                <div class="btsitecbrcb">
+                    <h1>加手机版	</h1>
+                    <h2>增手机移动端 + 50%</h2>
+                    <h3>语言版本</h3>
+                    <h4>增加英文版 + 40%（不包翻译）</h4>
+                    <h5></h5>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="PublicConmax" style="background: url(images/iline.png);">
+        <div class="PublicCon">
+            <div class="site">
+                <h1 class="siteTile">定制网站的优势</h1>
+                <h2 class="siteStile">ADVANTAGES OF CUSTOMIZED SITES</h2>
+                <i class="line"></i>
+                <div class="text">
+                    <p>一个优秀的网站从看得到的、感受到的、看不到的细节涉及层面太多太多。</p>
+                    <p>旗宇科技凭借多年行业经验与专业化团队，让您的网站能够从满足预期目标到走向卓越。</p>
+                    <p><strong>那么，您是否明白定制网站与模板网站以及自助建站又有什么区分？</strong></p>
+                    <p>或者定制网站能否达成您的预期目标？希望浏览以下内容后，能给您明确的思路。</p>
+                </div>
+                <ul class="sitect clearfix">
+                    <li class="bg1">
+                        <h1>什么是<br />
+                            <strong>定制网站</strong></h1>
+                        <div class="ico none">
+                            <img src="images/site4.png" tppabs="http://www.web-591.com/images/site4.png" /></div>
+                        <!--[if IE]> <style type="text/css">.site ul.sitect li  .none{display:none;}</style><div class="ico"><img src="images/site4.png" tppabs="http://www.web-591.com/images/site4.png" /></div><![endif]-->
+                        <p class="text">定制网站是根据客户的基本想法和需求，我们根据客户基本要求，给客户报价和工期，以及客户网站的策划和后期的运营推广，客户认可我们的价格、工期和制作能力后，签订网站制作合同，我们开始设计每个页面的效果图，直到客户满意为止，然后采用DIV+CSS目前主流的布局来制作网站的静态页。</p>
+                        <img src="images/bg1.jpg" tppabs="http://www.web-591.com/images/bg1.jpg" />
+                    </li>
+                    <li class="bg2">
+                        <h1>什么是<br />
+                            <strong>模版网站</strong></h1>
+                        <div class="none ico">
+                            <img src="images/site5.png" tppabs="http://www.web-591.com/images/site5.png" /></div>
+                        <!--[if IE ]><div class="ico"><img src="images/site5.png" tppabs="http://www.web-591.com/images/site5.png" /></div><![endif]-->
+                        <p class="text">模版网站就是几年前设计的网站风格，网络公司把现成的网站直接卖给客户，客户自己传资料；这样的网站设计风格千篇一律，没有设计理念。模版网站不是按照客户的想法去设计制作的，一个模版被很多客户选择，打开的网站都是一样的，不益于官方形象和百度排名，且无法二次开发和修改网站功能。</p>
+                        <img src="images/bg2.jpg" tppabs="http://www.web-591.com/images/bg2.jpg" />
+                    </li>
+                    <li class="bg3">
+                        <h1>什么是<br />
+                            <strong>自助建站</strong></h1>
+                        <div class="none ico">
+                            <img src="images/site6.png" tppabs="http://www.web-591.com/images/site6.png" /></div>
+                        <!--[if IE ]> <div class="ico"><img src="images/site6.png" tppabs="http://www.web-591.com/images/site6.png" /></div><![endif]-->
+                        <p class="text">自助建站是网络公司提供一套现成的系统，教您自己搭建一个网站。不懂的人很难学会。其次，没有设计风格，做出来的网站也不美观。市面上打着500元建站的网络公司，本都是这样的。这种系统做出来的网站不利于百度优化，不利于网站的排名。这种网络公司服务不到位，且无法二次开发和修改网站功能。</p>
+                        <img src="images/bg3.jpg" tppabs="http://www.web-591.com/images/bg3.jpg" />
+                    </li>
+                </ul>
+                <p class="lin40">综上所述，不难看出定制网站的特点和优势非常突出，而模板网站以及自助建站则有非常多的不足</p>
+                <ul class="sited">
+                    <li class="bag1"><span class="bag"></span><i></i>
+                        <h1>栏目架构</h1>
+                        <h2>全面且重点突出</h2>
+                    </li>
+                    <li class="bag2"><span class="bag"></span><i></i>
+                        <h1>视觉表现</h1>
+                        <h2>精湛的视觉创意设计</h2>
+                    </li>
+                    <li class="bag3"><span class="bag"></span><i></i>
+                        <h1>用户感受</h1>
+                        <h2>耳目一新的动效体验</h2>
+                    </li>
+                    <li class="bag4"><span class="bag"></span><i></i>
+                        <h1>系统功能</h1>
+                        <h2>易操作，可拓展</h2>
+                    </li>
+                    <li class="bag5"><span class="bag"></span><i></i>
+                        <h1>标准化</h1>
+                        <h2>兼容性、安全性</h2>
+                    </li>
+                    <li class="bag6"><span class="bag"></span><i></i>
+                        <h1>售后服务</h1>
+                        <h2>及时的、愉悦的</h2>
+                    </li>
+                    <li style="height: 0; clear: both; float: none;"></li>
+                </ul>
+                <li class="clear"></li>
+                <div class="yuanang">
+                    <p>旗宇科技除了带给您愉悦的服务体验之外，同样也会想您你未想的事情！</p>
+                    <h1>您的成功，才是旗宇科技最大的愿望！</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sitece">
+        <h1>制作流程</h1>
+        <h2>Production process</h2>
+        <ul>
+            <li class="bag1"><span class="bag">
+                <img src="images/sitece1.png" tppabs="http://www.web-591.com/images/sitece1.png" /></span><h2>签订合同</h2>
+            </li>
+            <li class="bag2"><span class="bag">
+                <img src="images/sitece2.png" tppabs="http://www.web-591.com/images/sitece2.png" /></span><h2>交付预付金</h2>
+            </li>
+            <li class="bag3"><span class="bag">
+                <img src="images/sitece3.png" tppabs="http://www.web-591.com/images/sitece3.png" /></span><h2>效果图确定</h2>
+            </li>
+            <li class="bag4"><span class="bag">
+                <img src="images/sitece4.png" tppabs="http://www.web-591.com/images/sitece4.png" /></span><h2>程序开发</h2>
+            </li>
+            <li class="bag5"><span class="bag">
+                <img src="images/sitece5.png" tppabs="http://www.web-591.com/images/sitece5.png" /></span><h2>验收结算</h2>
+            </li>
+            <li class="bag6"><span class="bag">
+                <img src="images/sitece6.png" tppabs="http://www.web-591.com/images/sitece6.png" /></span><h2>正式上线</h2>
+            </li>
+            <li style="height: 0; clear: both; float: none;"></li>
+        </ul>
+    </div>
+    <div class="PublicConmax" style="background: url(images/iline.png);">
+        <div class="PublicCon">
+            <div class="site">
+                <h1 class="siteTile">常见问题解答</h1>
+                <h2 class="siteStile">COMMON PROBLEM SOLUTIONS</h2>
+                <div class="sitecommon">
+                    <div class="row">
+                        <ul id="thumbs">
+                            <li class="item-thumbs span4"><a href="####" title="Leather Bag" class="hover-wrap"><span class="overlay-img"></span>
+                                <p class="description">
+                                    <img width="486" height="245" src="images/web1.jpg" tppabs="http://www.web-591.com/images/web1.jpg"></p>
+                            </a>
+                                <img width="486" height="245" src="images/website_1.jpg" tppabs="http://www.web-591.com/images/website_1.jpg" class="attachment-work-thumb wp-post-image">
+                            </li>
+                            <li class="item-thumbs span4"><a href="####" class="hover-wrap"><span class="overlay-img"></span>
+                                <p class="description">
+                                    <img width="486" height="245" src="images/web2.jpg" tppabs="http://www.web-591.com/images/web2.jpg"></p>
+                            </a>
+                                <img width="486" height="245" src="images/website_2.jpg" tppabs="http://www.web-591.com/images/website_2.jpg" class="attachment-work-thumb wp-post-image">
+                            </li>
+                            <li class="item-thumbs span4"><a href="####" title="Pyconic" class="hover-wrap"><span class="overlay-img"></span>
+                                <p class="description">
+                                    <img width="486" height="245" src="images/web3.jpg" tppabs="http://www.web-591.com/images/web3.jpg"></p>
+                            </a>
+                                <img width="486" height="245" src="images/website_3.jpg" tppabs="http://www.web-591.com/images/website_3.jpg" class="attachment-work-thumb wp-post-image">
+                            </li>
+                            <li class="item-thumbs span4"><a href="####" title="Pyconic" class="hover-wrap"><span class="overlay-img"></span>
+                                <p class="description">
+                                    <img width="486" height="245" src="images/web4.jpg" tppabs="http://www.web-591.com/images/web4.jpg"></p>
+                            </a>
+                                <img width="486" height="245" src="images/website_4.jpg" tppabs="http://www.web-591.com/images/website_4.jpg" class="attachment-work-thumb wp-post-image">
+                            </li>
+                        </ul>
+                    </div>
+                    <p align="center" style="padding-top: 70px;">
+                        <img src="images/wphone.png" tppabs="http://www.web-591.com/images/wphone.png" /></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="foot">
+<div class="video_bg">
+            <div class="video_overlay"></div>
+            <video preload="metadata" src="swf/bg4.mp4" tppabs="http://www.web-591.com/swf/bg4.mp4" autoplay="autoplay" loop="loop" width="100%" muted="muted"></video>
+</div>
+
+  <div class="footCont">
+  	<div class="img"><img src="images/foot1.png" tppabs="http://www.web-591.com/images/foot1.png" /></div>
+    <div class="conn">
+    	<h1>tel’4006-624-024</h1>
+        <h2>phone’130-8080-8189</h2>
+        <p class="text chuanz">024 - 31998385</p>
+        <p class="text phone">024 - 31689292 / 31993121</p>
+        <p class="text mail">manager@qiyukeji.com</p>
+        <p class="text add">沈阳市和平区南五马路121号(万丽城大厦)1201室</p>
+        <p class="text Copyright"><p>
+	Copyright @ 沈阳旗宇同创科技有限公司 All Rights Reserved. 辽ICP备10200622号
+</p>
+<p>
+	<br />
+</p>
+<p>
+	<span style="color:#CCCCCC;"><a href="javascript:if(confirm('http://www.qiyukeji.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.qiyukeji.com/'" tppabs="http://www.qiyukeji.com/" target="_blank">沈阳网站设计</a>&nbsp; &nbsp;</span><span style="color:#CCCCCC;"><a href="javascript:if(confirm('http://www.web-518.com/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.web-518.com/'" tppabs="http://www.web-518.com/" target="_blank">沈阳网站制作</a>&nbsp; &nbsp;<span style="color:#CCCCCC;"><a href="javascript:if(confirm('http://www.zek-ad.cn/  \n\n���ļ��޷��� Teleport Ultra ����, ��Ϊ ����һ�����·���ⲿ������Ϊ������ʼ��ַ�ĵ�ַ��  \n\n�����ڷ������ϴ���?'))window.location='http://www.zek-ad.cn/'" tppabs="http://www.zek-ad.cn/" target="_blank">沈阳高端网站设计</a></span> </span>
+</p></p>
+    </div>
+      <div style="display: none;"><script type="text/javascript"> var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://"); document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F4958c51269993af9fc2d09044c8f124e' type='text/javascript'%3E%3C/script%3E")); </script>
+<--!百度统计 -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "../hm.baidu.com/hm.js-c5cb06d1680e896345ca9b6051bcb25c"/*tpa=http://hm.baidu.com/hm.js?c5cb06d1680e896345ca9b6051bcb25c*/;
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</div>
+    <div class="clear"></div>
+  </div>
+</div>
+      </form>
+
+
+</body>
+</html>

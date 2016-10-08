@@ -1,0 +1,306 @@
+﻿@charset "utf-8";
+/* CSS Document */
+* {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	margin: 0;
+	padding: 0;
+	border: none;
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+*:focus {
+	outline: none;
+}
+body{ margin:0; padding:0; overflow-x:hidden; }
+html { zoom: 1; display:block;
+font-family: 'Helvetica Neue', 'Hiragino Sans GB', 'Segoe UI', Tahoma, Arial, STHeiti, sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	 }
+html * { outline: 0; zoom: 1; }
+html, body {
+	-webkit-user-select: none;
+	user-select: none;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+body {
+	-webkit-overflow-scrolling: touch; 
+}
+html button::-moz-focus-inner {
+border-color:transparent!important;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td { margin: 0; padding: 0; }
+fieldset, a img { border: 0; }
+img { max-width: 100%; }
+address, caption, cite, code, dfn, em, th, var { font-style: normal; font-weight: normal; }
+li { list-style: none; }
+caption, th { text-align: left; }
+h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: normal; }
+q:before, q:after { content: ''; }
+input[type="submit"], input[type="reset"], input[type="button"], button { -webkit-appearance: none; /*去掉苹果的默认UI来渲染按钮*/ }
+em, i { font-style: normal; }
+.clearfix:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+.clearfix { display: block; }
+.clear { clear: both; }/* 清除浮动*/
+.colwrapper { overflow: hidden; zoom: 1 /*for ie*/; margin: 5px auto; }/* 高度自适应 */
+.strong { font-weight: bold; }
+.left { float: left; }
+.right { float: right; }
+.center { margin: 0 auto; text-align: center; }
+.block { display: block; }
+.inline { display: inline; }
+.transparent { filter: alpha(opacity=50); -moz-opacity: 0.5;/** Firefox 3.5即将原生支持opacity属性，所以本条属性只在Firefox3以下版本有效 ***/ -khtml-opacity: 0.5; opacity: 0.5; }
+.break { word-wrap: break-word; overflow: hidden; /*word-break:break-all;*/ }
+.tal { text-align: left }
+.tar { text-align: right; }/*文字两侧对齐*/
+.justify { text-align: justify; text-justify: distribute-all-lines;/*ie6-8*/ text-align-last: justify;/* ie9*/ -moz-text-align-last: justify;/*ff*/ -webkit-text-align-last: justify;/*chrome 20+*/ }
+.toe { /*超出省略号*/ word-break: keep-all; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+ @media screen and (-webkit-min-device-pixel-ratio:0) {/* chrome*/
+.justify:after { content: "."; display: inline-block; width: 100%; overflow: hidden; height: 0; }
+}
+/* 兼容IE6的定位属性fixed，固定不动样式 */
+
+.fixed { position: fixed; clip: rect(0 100% 100% 0); _position: absolute; /* 底部 */ bottom: 0px; left: 0px; _top:expression(document.documentElement.scrollTop+document.documentElement.clientHeight-this.clientHeight);
+}
+/* 解决固定层在IE6下闪的问题 */
+
+*html { background-image: url(about:blank); background-attachment: fixed; }
+/*png图片ie6下透明滤镜实现写法*/
+
+em { font-style: italic !important; }
+strike { text-decoration: line-through !important; }
+strong { font-weight: bold !important; }
+u { text-decoration: underline !important; }
+.font14px { font-size: 14px; }
+a { color: #4e4e4e; transition: all 0.3s ease-in-out 0s; outline: none; text-decoration: none; }
+a:hover { color: #f20001; text-decoration: none; }
+body { font-family: "Microsoft YaHei", sans-serif; font-size: 14px; line-height: normal; color: #4e4e4e; }
+
+/*******************************banner************************************/
+/* slide */
+.wap_banner { width: 100%; height:8rem;  }
+.wap_rslides { position: relative; list-style: none; overflow: hidden; width: 100%; padding: 0; margin: 0; }
+.wap_rslides li { -webkit-backface-visibility: hidden; position: absolute; display: none; width: 100%; left: 0; top: 0; }
+.wap_rslides li:first-child { position: relative; display: block; float: left; }
+.wap_rslides img { display: block; height:8rem; float: left; width: 100%; border: 0; }
+.wap_slide_container { position: relative; float: left; width: 100%; }
+.wap_slide { position: relative; list-style: none; overflow: hidden; width: 100%; padding: 0; margin: 0; }
+.wap_slide li { position: absolute; width: 100%; left: 0; top: 0; }
+.wap_slide img {display: block; position: relative; z-index: 1; height: auto; width: 100%; border: 0; }
+.wap_slide .wap_caption { display: block; z-index: 2; margin: 0 auto; background-image: url("../images/icon1.png"/*tpa=http://www.web-591.com/images/icon1.png*/); width: 10px; height: 10px; display: none; }
+.slide_nav { position: absolute; -webkit-tap-highlight-color: rgba(0,0,0,0); top: 33%; left: 3%; z-index: 3; text-indent: -9999px; overflow: hidden; text-decoration: none; height: 31px; width: 31px; background: transparent url("../images/l-btn.png"/*tpa=http://www.web-591.com/images/l-btn.png*/) no-repeat left top; background-size: 100%;}
+.slide_nav:active { opacity: 1.0; }
+.slide_nav.next { left: auto; background-position: right top; right: 3%;  background-image: url("../images/r-btn.png"/*tpa=http://www.web-591.com/images/r-btn.png*/);background-size: 100%; }
+
+/*******************************banner************************************/
+/* slide */
+
+
+
+/* 首页 */
+.wap_Inavs{ width:100%; height:80px;}
+.wap_login{ width:11rem; padding-top:1rem; padding-left:0.8rem;}
+.wap_Icase{ width:100%; margin:auto; padding-top:1.5rem;}
+.wap_Icase_title{ width:11rem;height:4rem; margin:0 auto; overflow:hidden;}
+.wap_Icase_list{ width:99%; margin:auto;padding: 1rem 0;}
+.wap_Icase_list a.wap_Acon{ display: block; width:48%; text-align:center; height:7rem; overflow: hidden; float: left; margin-left:0.3rem; margin-top:0.5rem}
+.wap_Icase_list a.wap_Acon img{ width:100%; height:100%}
+.wap_Imore { width: 150px; padding: 10px 0; text-align: center; color: #fff; background: #f20001; display: block; font-size: 16px; margin: 20px auto 0 ; }
+.wap_Imore:hover{color:#fff}
+.banne2 { background: url("../images/numbg.jpg"/*tpa=http://www.web-591.com/images/numbg.jpg*/) no-repeat center center; width: 100%; height: 10rem; position: relative; overflow:hidden;margin-top: 2.5rem; margin-bottom:1.5rem; }
+/*.w1002{ width:98%; margin:auto;}
+.banne2 h1 { font-size: 1rem; text-align: center; font-weight: bold; padding-top: 1rem; color: #fff; position: relative; z-index: 2; }
+.banne2 h2 { text-align:center; text-align: center; margin-top: 0.5rem; float: left; width: 33.3333%; color: #fff; padding-top: 4.5rem; 
+font-size:0.56rem; background:url(../images/wap_bg1.png) no-repeat; position: relative; z-index: 2; }
+.banne2 h2.num1 {  background-position: -7px 0; width: 30%; }
+.banne2 h2.num2 { background-position: -204px 0; width: 37%; }
+.banne2 h2.num3 {  background-position: -413px 0; width: 33%; }*/
+.container { position: absolute; height:10rem; width: 100%; }
+.counter {padding: 1.5rem 0; border-radius: 5px; background: url("../images/counter.png"/*tpa=http://www.web-591.com/images/counter.png*/);}
+.wrapper { width: 95%; margin:0 auto;color:#fff;padding-top: 2rem;}
+.counter {padding: 1.3rem 0.2rem; border-radius: 5px; background:url("../images/counter.png"/*tpa=http://www.web-591.com/images/counter.png*/) }
+.col_fourth { width: 30%;    margin: 0 1.5%;*margin: 0 1%; position: relative; display: inline; display: inline-block; float: left; }
+
+.count-title { font-size: 1.2rem; font-weight: normal; margin-bottom: 0; text-align: center; _height:105px; }
+.count-text {     font-size: 0.8rem; font-weight: normal; margin-top: 10px; margin-bottom: 0; text-align: center; }
+
+
+
+.wap_ContractList{ width:100%;  margin:0.5rem auto}
+.wap_ContractList .img { float:left;width: 30%; height: 3.9rem; border: solid 1px #ccc; text-align: center; vertical-align: middle; margin-left:0.2rem;}
+.wap_ContractList .img img { width: 100%; height: 100%; margin: 0 auto; }
+.wap_ContractList .conn {float:left;width: 67%;  padding-left: 0.5rem; vertical-align: middle; }
+.wap_ContractList .conn_bg { background: url("../images/iline.png"/*tpa=http://www.web-591.com/images/iline.png*/) repeat-x left top; height: 4rem; line-height:1.5rem; display: block; padding: 0 15px; margin-bottom: 10px; overflow:hidden}
+.wap_ContractList .conn_bg h1 { color: #50565d; font-size: 0.8rem; padding: 10px 0; font-weight: bold; }
+.wap_ContractList .conn_bg .cont { display: block; color: #84888d; }
+.wap_ContractList .time { display: inline-block; vertical-align: middle; position: relative; padding: 0 20px 0 22px; margin-left: 15px; color: #aaaaaa; }
+.wap_ContractList .time i { position: absolute; left: 0; top: 3px; display: inline-block; background: url("../images/conn_1.png"/*tpa=http://www.web-591.com/images/conn_1.png*/) no-repeat; width: 16px; height: 16px; }
+.wap_ContractList .num { display: inline-block; vertical-align: middle; position: relative; padding-left: 22px; color: #aaaaaa; }
+.wap_ContractList .num i { position: absolute; left: 0; top: 5px; display: inline-block; background: url("../images/conn_2.png"/*tpa=http://www.web-591.com/images/conn_2.png*/) no-repeat; width: 21px; height: 16px; }
+
+/*****************************  首页选择***********************/
+.wap_choose { width: 100%;  position: relative; padding-top:2rem}
+.wap_choose ul { display: block; margin-top: 30px; }
+.wap_choose li { float: left; width: 22.5%; vertical-align:middle; display:table; height: 3.8rem; margin: 5px 4px; border: solid 1px #ccc;
+ text-align: center;_width:156px ; overflow:hidden;}
+    .wap_choose li span{ display:table-cell; width:100%; vertical-align:middle;
+    }
+.wap_choose li a { width: 100%; height: 100%; display:block; padding:0.5rem }
+.wap_choose li a:hover{background:#d60000;}
+.wap_choose li a:hover img { transition: all 0.3s ease-in-out 0s; -webkit-filter:hue-rotate(260deg);　}
+.wap_choose li img {transition: all 0.3s ease-in-out 0s;max-width: 90%;}
+
+/***********************************底部***********************/
+.foot { height:367px;*height: 10rem; width: 100%; padding-top: 2rem; background: url("../images/foot.jpg"/*tpa=http://www.web-591.com/images/foot.jpg*/) no-repeat center center; border-bottom: solid 3px #f20001; position: relative; box-sizing: border-box; overflow: hidden; margin-top:1.5rem }
+/*.foot video { position: absolute; left: 0; right: 0; top: 0; bottom: 0;width: 100%; height:470px;  background-size: cover;
+  min-width: 100%; min-height: 100%; 
+  width: auto; 
+ height: auto; 
+ z-index: -100;  } */
+.foot video { position: absolute; left: 0; bottom: 0; z-index: -99; }
+.video_bg { height: 360px; overflow: hidden; position: absolute; left: 0; top: 0; width: 100%; z-index: 1; }
+.video_overlay { position: absolute; left: 0; right: 0; width: 100%; height: 100%; opacity: 0; z-index: 2; background: #000 url("../swf/bg4.jpg"/*tpa=http://www.web-591.com/swf/bg4.jpg*/); }
+.video_bg video { position: absolute; z-index: 1; max-width: 100%; bottom: -80px; left: 0; }
+.footCont { width: 100%; margin: 0 auto; z-index: 999; position: relative; }
+.footCont .img { width:50%; margin:auto; text-align:center;  }
+.footCont .conn { width:80%; margin:1rem auto; color: #fff; text-align:center  }
+.footCont .conn h1 { font-size: 1.5rem; text-transform: uppercase; line-height: normal; font-weight: bold; }
+.footCont .conn h2 { font-size: 1.2rem; text-transform: uppercase; line-height: normal; font-weight: bold; margin-bottom: 20px; }
+.footCont .conn p.text {  }
+.footCont .conn p.add { }
+.footCont .conn p.phone { }
+.footCont .conn p.chuanz {  }
+.footCont .conn p.mail { padding-bottom:2rem }
+.wap_Copyright { display:block; width:100%;  text-align:center; margin:0;  background:#f20001; padding: 0.5rem 0; color: #fff; font-size: 12px;*color:#fff }
+
+
+/***************************about**********************/
+
+.pageBannerS1 { width: 100%; height: 7rem; background: top center no-repeat; /*background-position: 61% 82%;*/ background-size:100% 100%;text-align: center; color: #fff; }
+.pageBannerS1 h1 { font-size: 0.97rem; font-weight: bold; padding-top: 3rem; }
+.pageBannerS1 .texts{top: 70px; position:relative; opacity:0; }
+.site .siteTile { font-size: 1.2rem; color: #f20001; text-align: center; line-height: normal; }
+.site .siteStile { font-size: 20px; color: #6b6b6b; text-align: center; line-height: normal; }
+
+
+.PublicCon { width: 100%; margin: 2rem auto; position: relative; overflow: hidden; line-height: 150%; }
+.PublicCon .wap_Atite{ width:80%; margin:auto;}
+.PublicConmax { width: 100%; padding: 70px auto; position: relative; overflow: hidden; line-height: 150%; }
+.wap_AboutC { width: 97%;padding: 1rem; margin:20px auto; color: #fff; }
+.wap_AboutC p{ font-size:0.8rem }
+.wap_AboutC h1 { font-size: 1.1rem; font-weight: bold; text-align:center; line-height: normal; padding-bottom: 0.5rem; }
+.ab1 { background: #009587; }
+.ab2 { background: #E91C62; }
+.ab3 { background: #FFC106; }
+.ab4 { background: #9D9D9D; }
+ul.AboutB { padding: 0 0 40px 0; width:99%; margin:auto; display: block; }
+.AboutB li { width: 33%;  float: left;padding-left: 0.5rem;padding-right: 0.5rem; padding-top: 7rem; text-align: center; color: #50565d; }
+.AboutB li h1 { font-size: 25px; font-weight: bold; line-height: normal; color: #4e4e4e; padding-bottom: 20px; }
+.AboutB li.ys1 { background: url("../images/wap_ab1.png"/*tpa=http://www.web-591.com/images/wap_ab1.png*/) no-repeat center 5px; }
+.AboutB li.ys2 { background: url("../images/wap_ab2.png"/*tpa=http://www.web-591.com/images/wap_ab2.png*/) no-repeat center 5px; }
+.AboutB li.ys3 { margin: 0; background: url("../images/wap_ab3.png"/*tpa=http://www.web-591.com/images/wap_ab3.png*/) no-repeat center 5px; }
+.line { width:99%; height: 1px; background: #ccc; display: block; margin: 1.8rem auto; font-size:1%; }
+.wap_AFrititle{ width:100%; padding:0 0.5rem;}
+.wap_AFrititle h1{font-size: 1.3rem;  text-align:center;  color:#4e4e4e;line-height: 2rem;}
+.Ablink{ padding:0}
+
+/***********************************************************************site**********************************/
+.btsitec { width: 100%;  }
+.btsitecTl { float: left; width: 65%; background: #f2f1f1; height: 210px; }
+.btsitecTl h1 { padding-top: 30px; text-align: center; font-size: 1rem;font-weight: bold; color: #7acec3; }
+.btsitecTlc { padding: 15px 17px; font-size: 14px;line-height: 26px;color: #6b6b6b;}
+.btsitecTr {float: left;width: 35%;border-left: solid 1px #ccc;height: 210px; padding: 0 14px;padding-top: 21px;line-height: 25px;
+color: #fff; background: url("../images/btsitecTr.jpg"/*tpa=http://www.web-591.com/images/btsitecTr.jpg*/) center;}
+.btsitecTr h2 { text-align: right; font-weight: bold; }
+.btsitecTr h2.one {  }
+.btsitecTr h2.two { padding-top: 70px }
+.btsiteccl { float: left;width: 35%; height: 93px; border-top: solid 1px #fff;padding-top: 25px;background: #27C0AB; margin:10px 0 }
+.btsiteccl h1 { padding: 0 9px;font-size: 0.75rem;  color: #fff; }
+.btsiteccr { float: left; width: 65%; height: 93px;  border-top: solid 1px #fff; padding-top: 15px; background: #eaeaea; margin:10px 0 }
+.btsiteccr h1 { padding: 0 13px;font-size: 0.75rem; color: #be8b25; }
+.btsitecbl { float: left; padding-top: 24px; width: 65%; background: url("../images/btsitecbl.jpg"/*tpa=http://www.web-591.com/images/btsitecbl.jpg*/) no-repeat #fff top right; background-size:40% }
+.btsitecbl h1 { font-size: 1rem; padding-left: 11px; font-weight: bold; padding-bottom: 10px; color: #ff9b6d; }
+.btsitecbl h2 { color: #6b6b6b; padding-left: 34px; color: #6b6b6b; line-height: 25px; font-size: 0.75rem; }
+.btsitecbCN h3 { color: #fff; margin-top: 6px; height: 45px; background: #7ACFC3; line-height: 45px; font-size: 14px; padding-left: 34px; }
+.btsitecbrcb { float: left;padding-top: 40px; color: #fff; background: #28C1AB; width: 35%;padding-bottom: 36px; }
+.btsitecbrcb h1, .btsitecbrcb h3 { padding-left: 17px; font-weight: bold; font-size: 0.85rem; }
+.btsitecbrcb h3 { padding-top: 15px; }
+.btsitecbrcb h2, .btsitecbrcb h4 { padding-left: 17px; padding-top: 5px; }
+.btsitecbrcb h5 { height: 45px; background: #EBEBEB; margin-top: 52px; }
+.site .siteTile2 { font-size: 1.2rem; color: #f20001; text-align: center; line-height: normal; }
+.site .siteStile { font-size: 0.89rem; color: #6b6b6b; text-align: center; line-height: normal; }
+ul.siteco { display: block; margin: 0.5rem 0; }
+ul.siteco li { display: block; width: 95%; margin:auto;font-size: 0.7rem;  }
+ul.siteco li .img{width: 100%;text-align: center; padding-top:20px;}
+ul.siteco li h1 { display: block; text-align: center; padding: 5px 0 10px 0; font-size: 16px; color: #6b6b6b; font-weight: bold; border-bottom: solid 1px #ccc; }
+ul.siteco li .text { display: block; padding: 12px 0; color: #6b6b6b; min-height: 63px; _height: 63px; }
+ul.siteco li .fuson { display: block; border: solid 1px #ccc; text-align: center; color: #6b6b6b; padding: 10px 0 }
+ul.siteco li .time { padding: 10px 0; display: block; text-align: center; color: #6b6b6b; }
+
+.site div.text p { text-align: center; color: #4e4e4e; font-size: 0.8rem; line-height: normal; padding: 3px 0; }
+.site div.text p strong { text-decoration: underline; }
+.site ul.sitect { display: block; border-top: solid 1px #ccc; border-bottom: solid 1px #ccc; margin-top: 45px; }
+.site ul.sitect li { border:1px solid #eee; display: block; width: 100%; padding: 1.5rem 0; transition: all 0.3s ease-in-out 0s; margin-top:1rem }
+.site ul.sitect li h1 { text-align: center; font-size: 1rem; line-height: normal; color: #fff; transition: all 0.3s ease-in-out 0s; }
+.site ul.sitect .Wtirbg1{ background:#f20001}
+.site ul.sitect .Wtirbg2{ background:#f20001}
+.site ul.sitect .Wtirbg3{ background:#f20001}
+.site ul.sitect li .wap_Wtit{ width:98%;  text-align:center;}
+.site ul.sitect li .ico { display: block; width: 55px; height: 40px; margin:0.6rem auto;  }
+.site ul.sitect li .ico img { transition: all 0.3s ease-in-out 0s;; max-width:65%; }
+.site ul.sitect li .text { display: block; width:98%; margin:0.5rem auto; color: #fff; padding: 0 10px; transition: all 0.3s ease-in-out 0s; line-height: 1.5rem; }
+
+.lin40 { padding: 2rem 0.3rem; display: block; text-align: center; font-size: 0.86rem; }
+.site ul.sitect li.bg1 { background: #02A9F3; transition: all 0.3s ease-in-out 0s; font-size:0.75rem}
+.site ul.sitect li.bg2 { background: #E91C62; transition: all 0.3s ease-in-out 0s; font-size:0.75rem}
+.site ul.sitect li.bg3 { background: #8BC348; transition: all 0.3s ease-in-out 0s; font-size:0.75rem}
+.site ul.sitect li:hover h1, .site ul.sitect li:hover .text { color: #fff;}
+.site ul.sitect li:hover img { transition: all 0.3s ease-in-out 0s; -webkit-filter: invert(0) }
+.yuanang { border: solid 1px #ccc; border-left: none; border-right: none; margin-top:2.5rem; padding: 30px 0; text-align: center; font-size: 0.86; }
+.yuanang h1 { color: #f20001; font-size: 1rem; font-weight: bold; line-height: normal; padding-top: 5px; }
+.sitece { width: 100%; background: url("../images/wap_sitece.jpg"/*tpa=http://www.web-591.com/images/wap_sitece.jpg*/) no-repeat center center; height:11rem ; background-size:100%;}
+.sitecommon { padding-top:2rem; }
+.sitecommon .thumbs{ width:100%; margin:1.5rem auto;}
+.sitecommon .thumbs li{ width:98%; margin:1rem auto;color:#fff;}
+.sitecommon .thumbs .bgspan1{ background:#E87BE5;  padding:1rem 0;}
+.sitecommon .thumbs .bgspan2{ background:#A1E46E;  padding:1rem 0;}
+.sitecommon .thumbs .bgspan3{ background:#8DE9EA;  padding:1rem 0;}
+.sitecommon .thumbs .bgspan4{ background:#EF6787;  padding:1rem 0;}
+.sitecommon .wap_Wtit h3{ width:100%; text-align:center; font-size:0.95rem; padding:1rem 0.3rem;font-weight: bold;}
+.sitecommon .wap_description{display: block;  padding: 0 0.6rem;font-size:0.75rem; text-indent:2em;}
+
+
+/*************************************************************case*****************************/
+.wap_PublicCon{width: 100%; margin: 0 auto; position: relative; overflow: hidden; line-height: 150%;}
+.wap_caselist { width: 47%; float: left; margin-left:0.5rem;_margin: 0 11px 10px 11px; padding-bottom:1rem; }
+.wap_caselist a:hover{ cursor:pointer;}
+.wap_caselist .wap_img { width: 100%; height:7rem}
+
+.X_wap_casetit {border-bottom: solid 1px #ccc; text-align: center; padding-bottom: 0.5rem;  width:100%;}
+.X_wap_casetit p { font-size: 0.7rem;}
+.wap_caselist h1 { height:2rem; line-height:2rem; text-align: center;font-size: 0.8rem; width:100%;overflow: hidden; }
+.wap_caselist h6 { text-align: center; position: relative; line-height:2rem; color: #929191; width:100%; display:block; }
+.wap_caselist h6 .time { position: absolute; right: 0; top: 0; }
+.page { margin: 10px 0; text-align: center; width: 100%; }
+
+.publicContTop { padding-top: 0px; width: 100%; margin-bottom:1rem }
+.publicContTop h1 { color: #212121; font-size: 1.2rem; font-weight: normal; text-align: center; line-height: normal; padding-bottom: 19px; }
+.publicContTop p { color: #525252; font-size: 0.8rem; font-weight: normal; padding-bottom: 30px; border-bottom: solid 1px #bcbcbc; width: 92%; margin: 0 auto; display: block; }
+.publicContTop h2 { text-align: center; color: #a3a3a3; line-height: normal; padding: 30px 0; font-size: 14px; }
+.publicContTop h2 a { color: #848484 }
+.publicContTop h2 a:hover { color: #f20001 }
+.qita { text-align: center; padding: 2rem 0; font-size: 1.2rem; color: #50565d; line-height: normal; }
+/*************************************************************contact*****************************/
+.contact h1 { font-size: 1.2rem; color: #4e4e4e; line-height: normal; text-align: center; }
+.contact h2 { font-size: 1.5rem; color: #f30002; font-weight: bold; line-height: normal; text-align: center; }
+.contactD1 { width: 100%; padding-bottom:2rem ;padding-top: 5rem; display: block; text-align: center;font-size:0.8rem;
+ background: url("../images/wap_conpic1.png"/*tpa=http://www.web-591.com/images/wap_conpic1.png*/) no-repeat center 1rem; }
+.contactD4 { font-size:0.8rem;width: 100%; padding-bottom:2rem ;padding-top: 5rem; display: block; text-align: center; background: url("../images/wap_conpic2.png"/*tpa=http://www.web-591.com/images/wap_conpic2.png*/) no-repeat center 1rem;  }
+.contactD2 { font-size:0.8rem;width: 100%; padding-bottom:2rem ;padding-top: 5rem; display: block; text-align: center; background: url("../images/wap_conpic3.png"/*tpa=http://www.web-591.com/images/wap_conpic3.png*/) no-repeat center 1rem;  }
+
+.contactD5 {font-size:0.8rem; width: 100%; padding-bottom:2rem; padding-top: 5rem; display: block; text-align: center; background: url("../images/wap_conpic4.png"/*tpa=http://www.web-591.com/images/wap_conpic4.png*/) no-repeat center 1rem;  }
+
+.wap_Hovn { width:98%; margin:auto;margin-top:1rem; cursor: default; background: #eae9e9; display:block;color: #3a3a3a; font-size: 0.95rem; }
+a.wap_Hovn:hover{color: #3a3a3a;}
+.huik { display: block; padding-bottom: 40px; text-align: center; font-size: 18px; }
